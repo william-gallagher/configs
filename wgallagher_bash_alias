@@ -1,0 +1,14 @@
+# This is a files to hold all the bash customizations
+
+
+function cdd {
+  num=$1
+  old_wd=$(pwd)
+  while [ $num -ne 0  ];do
+    cd ..
+    num=$((num-1))
+  done
+  new_wd=$(pwd)
+  cd $old_wd
+  cd $new_wd
+}
