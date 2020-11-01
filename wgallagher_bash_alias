@@ -12,3 +12,9 @@ function cdd {
   cd $old_wd
   cd $new_wd
 }
+
+# This function searches all .c files
+grepc()
+{
+	grep -nr --include=*.c "$1"
+}
